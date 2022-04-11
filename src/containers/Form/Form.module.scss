@@ -1,0 +1,25 @@
+@import "../../assets/theme";
+
+.Form {
+    // padding-left: 10px;
+    display: flex;
+    justify-content: center;
+
+    &__Input {
+        font-size: 20px;
+        width: 90%;
+        height: 30px;
+        border: 2px solid $pastel-blue;
+        border-radius: 10px 0px 0px 10px;
+        border-right: none;
+        outline: 0;
+    }
+    &__SearchBtn {
+        font-size: 20px;
+        height: 36px;
+        background-color: $pastel-blue;
+        border: 2px solid $pastel-blue;
+        border-radius: 0px 10px 10px 0px;
+        border-left: none;
+    }
+}

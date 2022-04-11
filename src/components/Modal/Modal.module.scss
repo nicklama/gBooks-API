@@ -1,0 +1,62 @@
+@import "../../assets/theme";
+
+.Modal {
+    position: fixed;
+    left: 20%;
+    top: 25%;
+    width: 60%;
+    max-height: 50%;
+    animation-name: animatetop;
+    animation-duration: 2s;
+
+    padding: 10px;
+    border: 2px solid $macaroni-and-cheese;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.35);
+    overflow: hidden;
+
+    display: flex;
+
+    &__Image {
+        align-self: flex-start;
+        margin-right: 10px;
+        margin-top: 20px;
+        border: 2px solid $pastel-blue;
+    }
+    &__Content {
+        overflow: auto;
+        padding-right: 5px;
+        &::-webkit-scrollbar {
+            background-color: rgba(211, 211, 211, 0.7);
+            width: 10px;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $macaroni-and-cheese;
+            border-radius: 10px;
+        }
+    }
+
+    &__Close {
+        position: fixed;
+        right: 20.5%;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    &__Close:hover {
+        color: $macaroni-and-cheese;
+        cursor: pointer;
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 25%;
+        opacity: 1;
+    }
+}
