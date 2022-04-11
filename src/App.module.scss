@@ -5,6 +5,7 @@ body {
         sans-serif;
     background-color: $macaroni-and-cheese;
 
+    // custom scrollbar for the body
     &::-webkit-scrollbar {
         background-color: rgba(211, 211, 211, 0.7);
         width: 10px;
@@ -15,6 +16,3 @@ body {
         border-radius: 10px;
     }
 }
-
-// .App {
-// }

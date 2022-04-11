@@ -1,46 +1,59 @@
-# Google Books API
+# My Google Books API in React JS
+
+## Introduction
+
+This application allows the user to search for books and returns results from the Google Books API. It was built entirely using the React JS library for added efficiency. It fetches data from a public API and formats the JSON payload to a grid of search results.
+
+## Implementation
+
+I enjoyed creating this program as it was my first project that utilized React JS and fetching data from an API. I started by the layout of the website and separating each component to its own file to adhere to React protocols. I also used the online palette generator Coolors to achieve a minimalist look with pastel colours.
+
+As this was my first time working with the Google Books API, I used the provided Google Books Docs to become familiar with the different ways to interact and retrieve data from it. After creating functions to successfully extract the required information, I familiarised myself with the layout of the returned objects to format the output for the user. Once I had a functioning app, I then looked to implement some bonus features. The biggest feature I added was the modal which displays extra information after the user clicks on a result.
 
 ## Requirements
 
 ### MVP
 
-DUE ON MONDAY 11th OF APRIL
-
-1. Create a page that allows users to search for books
-1. Page should include the following:
+1. Create a page that allows users to search for books using the Google Books API
+1. The page should include the following:
     - Header section introducing the page
-    - Form containing a text input and a submit / search button
-    - A grid of books
+    - Form containing a text input and a search button
+    - A grid of returned book results
 
-Instructions:
+#### Instructions
 
--   When the submit button is clicked you need the request books from the Google books API using the input value as your query string
--   The books that you receive should be rendered in the books grid.
--   Each book in the grid should have an image, author, title and description
--   The grid should be responsive on different screen sizes
--   You should use async / await for your request code, NOT .then
+-   [x] When the submit button is clicked, a request for books needs to be sent to the Google books API using the input value as the query string
+-   [x] The books that are returned should be rendered in the books grid
+-   [x] Each book in the grid should have an image, author, title and description
+-   [x] The grid should be responsive on different screen sizes
+-   [x] Async / await should be used for the fetch code, NOT .then
 
-Styling (required):
+#### Styling
 
--   This application should look good, take some time to pick a palette and plan out your design. You can use tools like Figma or wireframe pro to plan what your application is going to look like.
--   Styling must use BEM, and each block should have its own SCSS file
--   Your palette should use variables
+-   [x] The application should have a clean palette and design
+-   [x] Styling must use BEM and each block should have its own SCSS file
+-   [x] The palette should use variables
 
-Application Design (required):
+#### Application Design
 
--   You should separate DOM functions and non-DOM functions in different modules Example: https://github.com/nology-tech/kiribati-resources/tree/main/js/modules
--   Write as many non-DOM functions as you can
--   Functions should do 1 thing, and should be as pure and reusable as possible
--   Always use iterators over loops
--   Always parametrize and abstract large pieces of duplicate code.
+-   [x] DOM functions and non-DOM functions should be separated in different modules
+-   [x] Functions should do one thing and be pure/reusable
+-   [x] Must parametrize and abstract large pieces of duplicate code
+-   [x] Must use iterators over loops
 
-Bonus (optional, but highly recommended):
+#### Bonus Features
 
--   Give feedback to the user when no book results can be found for the query.
--   When a user clicks a book in the grid, a modal should appear with more book information, think about release, publish date, country, languages, etc.
+-   [x] Give feedback to the user when no book results can be found for the query
+-   [x] When a user clicks on a book in the grid, render a modal with more book information e.g publish date, country, languages, etc.
+-   [x] Added animation to modal box
+-   [x] Custom Scrollbars
 
-# Resources
+## Future of the Project
 
-https://developers.google.com/books/docs/v1/using
+If given more time with this application, I would like to add more ways for users to search such as by author, publisher etc. I could add more animations to the website, like when results are returned to the user. Also I could implement a bookmark feature so the user can favourite searched books and view a list of their bookmarks.
 
-https://coolors.co/palette/fbf8cc-fde4cf-ffcfd2-f1c0e8-cfbaf0-a3c4f3-90dbf4-8eecf5-98f5e1-b9fbc0
+## Resources
+
+[Google Books Docs](https://developers.google.com/books/docs/overview)
+
+[Coolors](https://coolors.co/)

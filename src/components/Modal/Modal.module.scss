@@ -27,6 +27,8 @@
     &__Content {
         overflow: auto;
         padding-right: 5px;
+
+        // custom scrollbar
         &::-webkit-scrollbar {
             background-color: rgba(211, 211, 211, 0.7);
             width: 10px;
@@ -38,6 +40,7 @@
         }
     }
 
+    // close (x) button
     &__Close {
         position: fixed;
         right: 20.5%;
@@ -50,6 +53,7 @@
     }
 }
 
+// animation for when a modal is rendered
 @keyframes animatetop {
     from {
         top: -300px;

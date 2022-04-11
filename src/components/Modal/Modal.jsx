@@ -12,18 +12,20 @@ const Modal = ({ selectedBook, handleModalClick }) => {
                     selectedBook.volumeInfo.imageLinks
                         ? selectedBook.volumeInfo.imageLinks.thumbnail
                         : "http://lgimages.s3.amazonaws.com/nc-sm.gif"
-                }
-                alt=""
+                } // placeholder image if the thumbnail is undefined
+                alt="Book Cover"
             />
             <span className={style.Modal__Content}>
                 <h3>{selectedBook.volumeInfo.title}</h3>
                 <p>{selectedBook.volumeInfo.subtitle}</p>
+                {/* Checks if the authors array exists before and does not render if undefined */}
                 {selectedBook.volumeInfo.authors ? (
                     <p>By: {selectedBook.volumeInfo.authors.join(", ")}</p>
                 ) : (
                     <></>
                 )}
                 <p>Released: {selectedBook.volumeInfo.publishedDate}</p>
+                {/* Also checks categories exists to prevent an undefined error when calling .join() */}
                 {selectedBook.volumeInfo.categories ? (
                     <p>Categories: {selectedBook.volumeInfo.categories.join(", ")}</p>
                 ) : (

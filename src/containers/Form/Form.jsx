@@ -4,6 +4,7 @@ import { useState } from "react";
 const Form = ({ setSearch }) => {
     const [inputVal, setInputVal] = useState("");
 
+    // sets input value as user types into the input box
     const handleInput = (e) => {
         setInputVal(e.target.value);
     };
