@@ -1,5 +1,13 @@
 @import "../../assets/theme";
 
+.Background {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
 .Modal {
     position: fixed;
     left: 20%;
@@ -61,6 +69,15 @@
     }
     to {
         top: 25%;
+        opacity: 1;
+    }
+}
+// background fade in effect
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
         opacity: 1;
     }
 }
