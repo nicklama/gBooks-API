@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gBooks-API/static/css/main.c1e86e9d.css",
+    "main.js": "/gBooks-API/static/js/main.3bfd78cc.js",
+    "index.html": "/gBooks-API/index.html",
+    "main.c1e86e9d.css.map": "/gBooks-API/static/css/main.c1e86e9d.css.map",
+    "main.3bfd78cc.js.map": "/gBooks-API/static/js/main.3bfd78cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1e86e9d.css",
+    "static/js/main.3bfd78cc.js"
+  ]
+}
