@@ -4,7 +4,7 @@
 
 This application allows the user to search for books and returns results from the Google Books API. It was built entirely using the React JS library for added efficiency. It fetches data from a public API and formats the JSON payload to a grid of search results.
 
-![image](https://user-images.githubusercontent.com/100544978/162703321-d125e1df-c1b9-4ce4-a296-9c9f7e9a7cf2.png)
+<img width="750" alt="Google Books API" src="https://user-images.githubusercontent.com/100544978/170920480-78a695a2-b423-40d0-9090-f2bce296930a.png">
 
 ## Implementation
 
